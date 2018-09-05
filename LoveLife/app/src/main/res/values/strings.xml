@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoveLife</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="course_buy">购买课程</string>
+    <string name="course_allow_refund">30天无条件退款</string>
+    <string name="course_like">喜欢</string>
+    <string name="course_about">关于课程</string>
+    <string name="course_content">课程内容</string>
+    <string name="course_message">课程信息</string>
+    <string name="course_solve_problem">帮你解决</string>
+    <string name="course_write_message">写留言</string>
+</resources>

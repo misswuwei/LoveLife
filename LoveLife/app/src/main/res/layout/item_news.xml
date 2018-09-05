@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/rl_fragment_newsitem"
+    android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_newstitle"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="为什么执意要取消取消了3.5mm耳机孔?"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginRight="100dp"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_newsimg"
+            android:layout_width="85dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_newsother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_newstitle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="新华社  65评"
+            android:textSize="11dp" />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="370dp"
+            android:layout_height="0.3dp"
+            android:layout_below="@id/tv_newsother"
+            android:background="#ccc"/>
+</RelativeLayout>

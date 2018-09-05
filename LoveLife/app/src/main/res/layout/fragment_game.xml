@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00c5cd"
+                    >
+                    <ImageView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/newsitem" />
+                    <TextView
+                        android:id="@+id/toolbartitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="排行榜"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+                <com.tmall.ultraviewpager.UltraViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/ul_page"></com.tmall.ultraviewpager.UltraViewPager>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/game_recycle">
+                        </android.support.v7.widget.RecyclerView>
+                        <View
+                            android:layout_below="@+id/game_recycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"/>
+                    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

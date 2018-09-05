@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_item_oval"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/game_home_special_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专题"
+            android:textColor="#336"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看更多"
+            android:textSize="13dp"
+            android:textColor="#66CDAA"/>
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#877"
+            android:layout_below="@id/game_home_special_text"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/game_home_special_page"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            ></android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</LinearLayout>

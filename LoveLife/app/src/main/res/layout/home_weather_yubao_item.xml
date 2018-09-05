@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/weather_rl_yubao_today"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/weather_yubao_text"
+        >
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/weather_yubao_today"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天"
+            android:textColor="@color/text_gray"/>
+        <View
+            android:layout_marginLeft="2dp"
+            android:layout_below="@id/weather_yubao_today"
+            android:layout_width="38dp"
+            android:layout_height="0.5dp"
+            android:background="@color/white"/>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/weather_yubao_today_icon"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/weather_yubao_today"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/weather_yubao_today_wer"
+            android:layout_toRightOf="@id/weather_yubao_today_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中雨"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/weather_yubao_today_wendu"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/weather_yubao_today_wer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30° / 25°"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/weather_yubao_today_fengli"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/weather_yubao_today_wendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="东南风   3-4级"
+            android:textColor="@color/white"/>
+        <View
+            android:layout_alignParentBottom="true"
+            android:id="@+id/weather_yubao_today_ling"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#fff"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#88cccccc"
+    android:id="@+id/ll_home_game_item">
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/tv_gametitle"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自编辑的推荐"
+            android:textColor="#555"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/more" />
+        <TextView
+            android:id="@+id/tv_gameitem_ming"
+            android:layout_below="@+id/tv_gametitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="#442"
+            android:textSize="15dp"
+            android:layout_marginBottom="3dp"
+            android:text="崩坏 3"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_gameitem_src"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tv_gameitem_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="想为女武神装扮宿舍、在家中和Q萌女武神零距离互动吗？"
+            android:textColor="#999"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp">
+    <TextView
+        android:id="@+id/tv_riqi"
+        android:textColor="#99000000"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天"/>
+    <TextView
+        android:id="@+id/tv_duoyun"
+        android:textColor="#99000000"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多云 | 优"/>
+    <TextView
+        android:id="@+id/tv_wendu"
+        android:textColor="#99000000"
+        android:paddingRight="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="34/22C"/>
+
+
+</RelativeLayout>

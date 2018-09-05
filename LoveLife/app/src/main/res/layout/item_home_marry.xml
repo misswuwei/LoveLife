@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="206dp"
+    android:id="@+id/home_marry_recycler">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/home_marry_image"
+        android:layout_margin="5dp"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/home_marry_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="目的地"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/home_marry_hint"
+        android:text="asdasdasdad"
+        android:textSize="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/home_marry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

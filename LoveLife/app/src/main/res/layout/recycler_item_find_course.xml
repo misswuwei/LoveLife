@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/item_find_course_rl_main"
+    android:layout_marginBottom="16dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/item_find_course_iv_cover"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/item_find_course_tv_price"
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/text_orange"
+        android:background="@drawable/bg_rounded_item_course_price"/>
+
+    <TextView
+        android:id="@+id/item_find_course_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_find_course_iv_cover"
+        android:layout_toLeftOf="@id/item_find_course_tv_price"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        android:text="职业规划"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/item_find_course_tv_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4.5dp"
+        android:paddingBottom="4.5dp"
+        android:layout_below="@id/item_find_course_tv_title"
+        android:layout_toRightOf="@id/item_find_course_iv_cover"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/text_orange"
+        android:background="@drawable/bg_rounded_item_course_recommend"/>
+
+    <TextView
+        android:id="@+id/item_find_course_tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4.5dp"
+        android:layout_below="@id/item_find_course_tv_title"
+        android:layout_toRightOf="@id/item_find_course_tv_recommend"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="11sp"
+        android:textColor="@color/text_green"/>
+
+    <TextView
+        android:id="@+id/item_find_course_tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_find_course_iv_cover"
+        android:layout_below="@id/item_find_course_tv_recommend"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:text="这个人生最重要的决定，你是否草率地就决定了？订阅专题来帮你解决以下问题。这个人生最重要的决定，你是否草率地就决定了？订阅专题来帮你解决以下问题。"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/item_find_course_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/item_find_course_iv_cover"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/text_gray"/>
+    <View.HintLayout
+        android:id="@+id/item_find_course_hint_view"
+        android:layout_below="@id/item_find_course_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></View.HintLayout>
+
+
+
+
+</RelativeLayout>

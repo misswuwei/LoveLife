@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_marginTop="3dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_item_oval">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/review_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="最新评价"
+            android:textColor="#336"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#66CDAA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"/>
+        <View
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#877"
+            android:layout_below="@id/review_item_title"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/review_cycler"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
