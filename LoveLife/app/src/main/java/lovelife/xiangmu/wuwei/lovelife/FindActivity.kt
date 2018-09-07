@@ -65,7 +65,13 @@ class FindActivity : BaseActivity() {
             course.Like = jsonObject.getString("like").toString()
             course.price = jsonObject.getString("price").toString()
             course.cover = "http://up-static.wupup.com/"+jsonObject.getString("cover").toString()
-            course.classNumber = jsonObject.getString("status").toString()
+            val courseArray = jsonObject.getJSONArray("courseVersion").toString()
+            course.classNumber = courseArray.length.toString()
+            for (i in 0..courseArray.length-1){
+                course.courseID?.add(courseArray.get(i).toString())
+            }
+            course.scid =jsonObject.getString("scid").toString()
+            course.cid = jsonObject.getString("cid").toString()
             course.setTips(jsonObject.getJSONArray("tips"))
             course.intro = jsonObject.getString("intro").toString()
             course.bgcolor = jsonObject.getString("bgcolor").toString()

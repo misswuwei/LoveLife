@@ -121,7 +121,6 @@ public interface RetrofitService {
     @GET("package/course-package")
     Observable<JsonObject> getCoursePackage(@Header("Access-Token") String access_token, @Query("cid") String cid);
 
-
     /****************************************注册登录*************************************************/
     @Headers("Content-Type:application/json")
     @POST("user/login")

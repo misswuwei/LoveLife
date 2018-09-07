@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_course.*
+import netUtil.RetrofitFactory
 
 
 /**
@@ -19,6 +20,7 @@ class CourseActivity : BaseActivity(){
         setContentView(R.layout.activity_course)
         initIntent()
         initUI()
+        initCourseDara()
     }
 
     fun initIntent(){
@@ -38,5 +40,9 @@ class CourseActivity : BaseActivity(){
         Glide.with(this).load(courseData?.cover).into(course_iv_cover)
         course_tv_second_title.setText(courseData?.intro)
         course_ll_solve_problem.addData(courseData?.tips!!)
+    }
+
+    fun initCourseDara(){
+//        setThread(RetrofitFactory.sRetrofitService.getSection(SPUtil.getString(application, "access_token", ""),))
     }
 }
